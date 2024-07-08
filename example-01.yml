@@ -10,7 +10,9 @@ spec:
     - "--dockerfile=Dockerfile"
     #refs/heads/master
     - "--context=git://github.com/jgtuvana/kaniko-demo-master.git"
-    - "--destination=kunchalavikram/kaniko-demo-image:latest"
+    #- "--destination=kunchalavikram/kaniko-demo-image:latest"
+    #- "--destination=<dockerhub-username>/kaniko-demo-image:1.0"
+    - "--destination=jgtuvana/kaniko-demo-image:1.0"
     volumeMounts:
     - name: kaniko-secret
       mountPath: /kaniko/.docker
